@@ -111,8 +111,8 @@ Edit
 **Saifullah Safar**  
 _Data Analyst | Data Scientist | Dashboard Designer_  
 
-📧 [saifullahsafar@gmail.com]  
-🌐 [LinkedIn](www.linkedin.com/in/saifullah-safar-534055345) | [Portfolio]([https://your-portfolio-site.com](https://www.upwork.com/freelancers/~01e22d8b31dd7bbbc1?mp_source=share)) | [GitHub]([https://github.com/YourUsername](https://github.com/SaifullahSafar))
+📧 saifullahsafar@gmail.com  
+🌐 [LinkedIn](https://www.linkedin.com/in/saifullah-safar-534055345) | [Portfolio](https://www.upwork.com/freelancers/~01e22d8b31dd7bbbc1?mp_source=share) | [GitHub](https://github.com/SaifullahSafar)
 
 ---
 
