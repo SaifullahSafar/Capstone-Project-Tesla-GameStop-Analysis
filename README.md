@@ -1,123 +1,110 @@
-# 📈 Capstone Project: Data Analysis & Visualization of Tesla and GameStop
+# 🚀 Capstone Project: Predicting Falcon 9 First Stage Landing Success
 
 ## 🧩 Project Overview
 
-This capstone project is part of the IBM Data Science Professional Certificate. The aim is to explore, analyze, and visualize stock and revenue data for **Tesla** and **GameStop**, two influential companies in the tech and retail sectors. Through this project, various data science tools and techniques are applied—from data wrangling and exploratory analysis to predictive modeling and interactive dashboards.
+This capstone project is part of the IBM Data Science Professional Certificate. The focus of this project is to analyze the historical launch data of SpaceX’s Falcon 9 rockets and predict whether the **first stage** of the rocket will successfully **land and be reusable**.
 
-The final product is an end-to-end data science case study that demonstrates not only technical skills, but also the ability to derive business insights from real-world financial data.
+Throughout this project, I applied the complete data science workflow including data collection, data wrangling, exploratory data analysis (EDA), SQL-based querying, classification modeling, and building an interactive dashboard with Plotly Dash.
 
 ---
 
 ## 🔍 Problem Statement
 
-How can we use historical stock data and financial information to understand trends, compare business performance, and make basic predictive insights?
+How can we use historical Falcon 9 launch data to determine the key factors influencing successful landings and develop a model to **predict landing outcomes**?
 
 ---
 
 ## 🧠 Key Tasks and Techniques
 
-- ✅ **Data Collection**  
-  Using `yfinance` and `BeautifulSoup` to gather historical stock prices and quarterly revenue data.
-
-- ✅ **Data Cleaning & Wrangling**  
-  Handling missing values, standardizing formats, parsing HTML tables, and preparing datasets for analysis.
+- ✅ **Data Collection & Wrangling**  
+  Collected and cleaned SpaceX Falcon 9 launch data, handling nulls, types, and derived features like `landing_class`.
 
 - ✅ **Exploratory Data Analysis (EDA)**  
-  Conducting in-depth EDA using `Pandas`, `Matplotlib`, `Seaborn`, and `Plotly`.
+  Used `Matplotlib`, `Seaborn`, and `Plotly` to analyze launch sites, landing types, orbit types, and success ratios.
 
-- ✅ **SQL-Based Data Queries**  
-  Leveraging SQL to extract insights from structured datasets (e.g., SpaceX launch dataset).
+- ✅ **SQL Queries**  
+  Performed analytical queries on the launch dataset to extract meaningful insights using SQL via SQLite.
 
-- ✅ **Interactive Map Visualization**  
-  Building a geospatial visualization with `Folium` to highlight relevant locations.
+- ✅ **Geospatial Mapping (Folium)**  
+  Created an interactive map displaying SpaceX launch sites and locations.
 
 - ✅ **Predictive Modeling**  
-  Applying classification models to predict business or landing outcomes.
+  Built classification models (Logistic Regression, Decision Tree) to predict the probability of a successful landing.
 
 - ✅ **Interactive Dashboard (Dash)**  
-  Creating a fully interactive web-based dashboard using `Plotly Dash`.
+  Developed a live web-based dashboard using Plotly Dash to visualize and interact with launch success data.
 
 ---
 
 ## 📁 Project Structure
 
-Capstone-Project-Tesla-GameStop-Analysis/
+Capstone-Project-Falcon9-Landing-Prediction/
 │
-├── data/ # Raw and cleaned data files
-│ ├── tesla_stock.csv
-│ ├── gamestop_stock.csv
-│ ├── tesla_revenue.csv
-│ └── gamestop_revenue.csv
+├── data/ # Cleaned data files
+│   └── spacex_launch_data.csv
 │
-├── notebooks/ # Jupyter notebooks for each project step
-│ ├── 01_data_collection.ipynb
-│ ├── 02_data_wrangling.ipynb
-│ ├── 03_eda_visuals.ipynb
-│ ├── 04_prediction_model.ipynb
-│ └── 05_sql_analysis.ipynb
+├── notebooks/ # Jupyter notebooks for each step
+│   ├── 01_data_collection_and_wrangling.ipynb
+│   ├── 02_eda_visualizations.ipynb
+│   ├── 03_sql_analysis.ipynb
+│   ├── 04_classification_model.ipynb
+│   └── 05_dash_dashboard_code.ipynb
 │
-├── app/ # Dash application files
-│ └── dash_app.py
+├── app/ # Dash app files
+│   └── dash_app.py
 │
-├── images/ # Exported images for maps, charts, and dashboard
-│ ├── folium_map.png
-│ ├── dashboard_screenshot.png
-│ └── stock_trends_plot.png
+├── images/ # Plots and screenshots
+│   ├── folium_map.png
+│   ├── dashboard_screenshot.png
+│   └── model_results.png
 │
-├── outputs/ # Final presentation and supporting materials
-│ └── final_presentation.pdf
+├── outputs/ # Final presentation
+│   └── final_presentation.pdf
 │
 └── README.md # This file
+📊 Sample Visuals
+📈 Launch success per site
 
-yaml
-Copy
-Edit
+🗺️ Folium map of launch locations
 
----
+📉 Classification model performance (confusion matrix, accuracy)
 
-## 📊 Sample Visuals
+📊 SQL-based orbit and landing outcome charts
 
-- 📉 Tesla & GameStop stock trends  
-- 🗺️ Folium map of launch or company locations  
-- 📈 Interactive Dash dashboard with time series and filters  
-- 🧮 Confusion matrix and model performance visualization
+📺 Dash dashboard screenshots
 
----
+🚀 Tools and Libraries Used
+Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly, Dash, Folium)
 
-## 🚀 Tools and Libraries Used
+Jupyter Notebooks
 
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly, Dash, Folium)
-- Jupyter Notebooks
-- SQL (via SQLite and Python connectors)
-- Git & GitHub
-- Web scraping with BeautifulSoup
-- PowerPoint / Google Slides
+SQL (SQLite)
 
----
+Scikit-learn (Logistic Regression, Decision Tree)
 
-## 📌 Key Outcomes
+Git & GitHub
 
-- Developed a full-stack data science solution using real business data  
-- Built multiple visualizations to support insights and storytelling  
-- Created a deployable and interactive dashboard with Plotly Dash  
-- Practiced using SQL and Python together in a data pipeline  
-- Applied classification techniques to a practical dataset  
-- Transformed technical results into a clear and understandable presentation
+PowerPoint / Google Slides
 
----
+📌 Key Outcomes
+Cleaned and analyzed launch data from SpaceX Falcon 9 missions
 
-## 👤 Author
+Discovered key patterns in successful landings
 
-**Saifullah Safar**  
-_Data Analyst | Data Scientist | Dashboard Designer_  
+Developed predictive models to classify landing success
 
-📧 saifullahsafar@gmail.com  
-🌐 [LinkedIn](https://www.linkedin.com/in/saifullah-safar-534055345) | [Portfolio](https://www.upwork.com/freelancers/~01e22d8b31dd7bbbc1?mp_source=share) | [GitHub](https://github.com/SaifullahSafar)
+Built a professional interactive dashboard for launch data visualization
 
----
+Created a comprehensive data science report with presentation-ready visuals
 
-## 🏁 Final Note
+👤 Author
+Saifullah Safar
+Data Scientist | Dashboard Designer  | Data Analyst
 
-This capstone reflects a comprehensive journey through the essential stages of data science and analytics. It merges business reasoning with technical analysis to produce meaningful insights.
+📧 saifullahsafar@gmail.com
+🌐 LinkedIn | Portfolio | GitHub
 
-> _"Turning raw data into stories that matter."_  
+🏁 Final Note
+This project represents a real-world data science application using actual launch data from SpaceX. From raw data to predictive insight, it reflects the practical power of Python, data analysis, and machine learning.
+
+"Data becomes powerful when it lands successfully—just like Falcon 9."
